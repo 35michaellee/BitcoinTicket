@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bitcoin Ticker</title>
+</head>
+<!--I use the API provided
+//by the site to send a get request to obtain the conversion
+//the get request looks like this GET https://apiv2.bitcoinaverage.com/indices/{symbol_set}/ticker/all?crypto={crypto}&fiat={fiat,fiat}
+//more info is here https://apiv2.bitcoinaverage.com/#ticker-data-all
+
+
+in this project I use node js I am learning about express and how*/-->
+<body>
+  <h1> Bitcoin Ticker</h1>
+  <form action="/" method="post">
+  <input type="text" name="amount" placeholder="Quantity">
+  <select name="crypto">
+    <option value="BTC">Bitcoin </option>
+    <option value="ETH">Etherium </option>
+    <option value="LTC">Litecoin </option>
+  </select>
+
+  <select name="fiat">
+    <option value="USD">US Dollars </option>
+    <option value="GBP">GB Pounds </option>
+    <option value="EUR">EU Euros </option>
+  </select>
+
+  <button type="submit" name="button">Check</button>
+  </form>
+</body>
+
+</html>
